@@ -25,7 +25,6 @@ func alignement():
 		vec += boid.velocity
 	vec /= len(nearBoids)
 	return vec
-	#return vec - velocity
 
 func cohesion():
 	var vec = Vector2(0,0)
@@ -59,11 +58,6 @@ func avoid_with_rays():
 	return vec
 
 func _physics_process(_delta):
-	# global_transform.x -> Le vecteur FORWARD
-	#velocity = global_transform.x * speed
-	
-	var forward = global_transform.x * 0.2
-	
 	var sep = separation().normalized() * Globals.sep_weight
 	var ali = alignement().normalized() * Globals.ali_weight
 	var coh = cohesion().normalized() * Globals.coh_weight

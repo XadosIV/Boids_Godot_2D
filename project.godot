@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="BoidsFSM2D"
-run/main_scene="uid://btm0j23u6n42s"
+run/main_scene="uid://c5wqc6nm3ko3f"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Globals="*res://scripts/globals.gd"
+Globals="*res://boids/scripts/globals.gd"
 
 [display]
 
