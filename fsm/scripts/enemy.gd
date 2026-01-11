@@ -133,6 +133,7 @@ func handle_states(delta):
 		State.GOTO_PATROL:
 			label.text = "STATE : GOTO_PATROL"
 			if to_patrol:
+				to_patrol = false
 				state = State.PATROL
 			else:
 				_goto_patrol()
